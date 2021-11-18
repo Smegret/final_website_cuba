@@ -2,37 +2,99 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cuba Project</title>
-    <link href="main.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/mej7wpz.css">
+    <title>Attractions</title>
+    <style>
+
+    body{
+      background: url("images/vintage_cars_parquecentral.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    #container{
+      flex-wrap: wrap;
+      width:1000px;
+      height:450px;
+      padding: 5px;
+    	margin:0 auto;
+      color: black;
+      text-align: center;
+      border: red 10px solid;
+      background-color:rgba(240, 240, 240, 0.8);
+    }
+        header{
+     padding: 0px;
+     text-align: center;
+     font-size: 20px;
+     font-family: masqualero-groove, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+   }
+
+  .grid{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: stretch;
+        align-items: end;
+      }
+
+
+      .grid >div{
+        background: #fff;
+        padding: 10px;
+      }
+
+      .box1{
+        grid-column: 1/3;
+        grid-row: 1;
+        border: 1px solid blue;
+      }
+      .box2{
+        grid-column: 3;
+        grid-row: 1;
+        border: 1px solid red;
+      }
+      .box3{
+        grid-column: 2/4;
+        grid-row: 2;
+        border: 1px solid red;
+      }
+
+      .box4{
+        grid-column: 2;
+        grid-row: 3/5;
+        border: 1px solid black;
+      }
+
+      .box5{
+        grid-column: 1;
+        grid-row: 2;
+        border: 1px solid blue;
+      }
+      footer{
+      	padding: 20px;
+        color: white;
+        width: 1000px;
+        text-align: center;
+
+      	}
+
+    </style>
   </head>
 
-  <body>
-    <div id="container">
-    <header><h1 <style= background-color:rgba(275, 99, 71, 0.3);> Beautiful Cuba</h1></header>
-    <nav>
-        <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="havana.html">Havana</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul></nav>
-
-  <article class="left"><img src="images/havana_sunset.jpg" alt="Beautiful Havana" width=300px hight=400px></<article>
-
-  <article class="right"><p>There is no denying the country of Cuba is one of the most unique destinations in the world &#127758.</p>
-      <p>Aut tempor nescius eruditionem, ex admodum instituendarum qui et non arbitrantur
-        qui cernantur fidelissimae nam laboris ut mentitum eu quid laboris, si constias
-        et voluptate an et ad quis tempor summis quo de culpa litteris efflorescere.
-        Dolor singulis ne dolor sint. Iis dolor laboris. </p>
-      <p>Est commodo firmissimum.Voluptate summis ipsum proident ipsum, nostrud anim dolor mandaremus
-        nisi non voluptate cillum ut laborum distinguantur, cillum commodo firmissimum.
-        Et illum voluptate, an laboris a constias. Offendit sint ex offendit illustriora
-        ita esse litteris domesticarum. Nisi praesentibus laborum magna laboris, ad
-        consequat de iudicem.</p>
-      </article>
-
+      <div id="container">
+      <header><h1><u>5 Memorable Things to See and Do in Havana</u></h1></header>
+      <nav>
+        <div class="grid">
+          <div class="box box1">Cruise the Malecon In A Classic American Car</div>
+          <div class="box box2">Tour "El Moro" Fort</div>
+          <div class="box box3">Take in the Buena Vista Social Club Show at Hotel Nacional de Cuba</div>
+          <div class="box box4">Do a Self-Guided Walking Tour of the Five Plazas in Old Havana:<br>
+            Plaza Vieja<br>Plaza de Armas<br>Plaza del Cristo<br> Plaza de Cathedral<br>Plaza de San Francisco
+          </div>
+          <div class="box box5">Visit Parque Central</div>
+        </div>
 <footer style="background-color:rgba(275, 99, 71, 0.3);"> Created by S. Megret &#9829; 2021</footer>
-
-    </div>
   </body>
 </html>
